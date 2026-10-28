@@ -1,46 +1,55 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="id">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Box Element</title>
+    <title>Box Element - Layout Sederhana</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <style>
-    body {
-      background-color: #121212;
-      color: #c9c9c9;
-      font-family: "Open Sans", sans-serif;
-    }
-    div {
-      float: left;
-      padding: 10px;
-      color: #ffffff;
-    }
-    .div1 {
-      background: red;
-    }
-    .div2 {
-      background: yellow;
-      color: #000000;
-    }
-    .div3 {
-      background: green;
-    }
-    .div4 {
-      background: blue;
-      clear: left;
-      float: none;
-    }
-  </style>
   <body>
-    <header>
-      <h1>Box Element</h1>
-    </header>
-    <section>
-      <div class="div1">Div 1</div>
-      <div class="div2">Div 2</div>
-      <div class="div3">Div 3</div>
-      <div class="div4">Div 4</div>
-    </section>
+    <div id="container">
+      <div id="topbar">
+        <header>
+          <h1>Box Element</h1>
+          <p>Latihan float dan clear</p>
+        </header>
+        <nav aria-label="Navigasi utama">
+        <a href="home.html">Home</a>
+        <a href="artikel.html">Artikel</a>
+        <a href="about.html">About</a>
+        <a href="kontak.html">Kontak</a>
+        </nav>
+      </div>
+
+      <main class="page-content">
+        <h2>Contoh Box Element dengan Float</h2>
+        <p>
+          Div 1, Div 2, dan Div 3 menggunakan <code>float: left</code>. Div 4
+          menggunakan <code>clear: left</code> dan <code>float: none</code>.
+        </p>
+
+        <section class="float-demo">
+          <div class="float-box div1">Div 1</div>
+          <div class="float-box div2">Div 2</div>
+          <div class="float-box div3">Div 3</div>
+          <div class="float-box div4">Div 4</div>
+        </section>
+
+        <div class="explanation">
+          <h3>Kesimpulan</h3>
+          <p>
+            Tanpa float, elemen div tampil berurutan ke bawah. Dengan
+            <code>float: left</code>, elemen mengalir ke sisi kiri.
+            <code>clear: left</code> membuat elemen berikutnya turun melewati
+            float di sisi kiri. Nilai <code>clear: both</code> membersihkan
+            float dari kedua sisi, sedangkan <code>clear: right</code>
+            membersihkan float dari sisi kanan.
+          </p>
+        </div>
+      </main>
+      <footer>
+        <p>&copy; 2026 - Universitas Pelita Bangsa</p>
+      </footer>
+    </div>
   </body>
 </html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layout Sederhana</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div id="topbar">
+        <header>
+          <h1>Layout Sederhana</h1>
+          <p>Belajar membuat layout website dengan HTML dan CSS</p>
+        </header>
+        <nav aria-label="Navigasi utama">
+        <a class="active" href="home.html">Home</a>
+        <a href="artikel.html">Artikel</a>
+        <a href="about.html">About</a>
+        <a href="kontak.html">Kontak</a>
+        </nav>
+      </div>
+
+      <section id="hero">
+        <h2>Selamat Datang!</h2>
+        <p>
+          Website sederhana untuk latihan HTML5 Semantic Elements, Box Element,
+          CSS Float, dan layout halaman.
+        </p>
+        <a href="about.html" class="btn btn-large">Tentang Saya &raquo;</a>
+      </section>
+
+      <section id="wrapper">
+        <main id="main">
+          <div class="row">
+            <article class="box">
+              <img
+                src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&amp;fit=crop&amp;w=400&amp;h=400&amp;q=85"
+                alt="Pemandangan pegunungan"
+                class="image-circle"
+              />
+              <h3>Layout</h3>
+              <p>Menyusun elemen halaman agar informasi mudah dibaca dan dipahami.</p>
+              <a href="artikel.html" class="btn btn-default">Lihat artikel</a>
+            </article>
+            <article class="box">
+              <img
+                src="https://images.unsplash.com/photo-1497250681960-ef046c08a56e?auto=format&amp;fit=crop&amp;w=400&amp;h=400&amp;q=85"
+                alt="Tanaman hijau"
+                class="image-circle"
+              />
+              <h3>HTML5</h3>
+              <p>Menggunakan elemen semantik seperti header, nav, main, article, aside, dan footer.</p>
+              <a href="artikel.html" class="btn btn-default">Lihat artikel</a>
+            </article>
+            <article class="box">
+              <img
+                src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&amp;fit=crop&amp;w=400&amp;h=400&amp;q=85"
+                alt="Pemandangan alam"
+                class="image-circle"
+              />
+              <h3>CSS3</h3>
+              <p>Mengatur warna, jarak, posisi, dan tampilan elemen pada halaman web.</p>
+              <a href="artikel.html" class="btn btn-default">Lihat artikel</a>
+            </article>
+          </div>
+
+          <hr class="divider" />
+          <article class="entry">
+            <h2>Mengenal Web Layout</h2>
+            <img
+              src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&amp;fit=crop&amp;w=600&amp;h=400&amp;q=85"
+              alt="Pemandangan alam"
+            />
+            <p>
+              Web layout merupakan susunan elemen pada halaman web, seperti
+              header, navigasi, konten utama, sidebar, dan footer. Layout yang
+              baik membantu pengunjung menemukan informasi dengan mudah.
+            </p>
+          </article>
+
+          <hr class="divider" />
+          <article class="entry">
+            <h2>Belajar HTML dan CSS</h2>
+            <img
+              src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&amp;fit=crop&amp;w=600&amp;h=400&amp;q=85"
+              alt="Ilustrasi belajar"
+              class="right-img"
+            />
+            <p>
+              HTML digunakan untuk membangun struktur halaman, sedangkan CSS
+              mengatur tampilannya. Keduanya dapat digunakan bersama untuk
+              membuat website yang rapi dan mudah digunakan.
+            </p>
+          </article>
+        </main>
+
+        <aside id="sidebar">
+          <section class="widget-box">
+            <h3 class="title">Navigasi Cepat</h3>
+            <ul>
+              <li><a href="home.html">Home</a></li>
+              <li><a href="artikel.html">Artikel</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="kontak.html">Kontak</a></li>
+              <li><a href="lab4_box.html">Box Element</a></li>
+            </ul>
+          </section>
+          <section class="widget-box">
+            <h3 class="title">Tentang Website</h3>
+            <p>
+              Project praktikum untuk mempelajari dasar layout website
+              menggunakan HTML5 dan CSS3.
+            </p>
+          </section>
+        </aside>
+      </section>
+      <footer>
+        <p>&copy; 2026 - Universitas Pelita Bangsa</p>
+      </footer>
+    </div>
+  </body>
+</html>

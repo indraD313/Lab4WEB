@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About - Layout Sederhana</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div id="topbar">
+        <header>
+          <h1>About</h1>
+          <p>Mengenal website dan portofolio</p>
+        </header>
+        <nav aria-label="Navigasi utama">
+        <a href="home.html">Home</a>
+        <a href="artikel.html">Artikel</a>
+        <a class="active" href="about.html">About</a>
+        <a href="kontak.html">Kontak</a>
+        </nav>
+      </div>
+
+      <section id="hero" class="hero-small">
+        <h2>Tentang Website Ini</h2>
+        <p>
+          Halaman ini dibuat sebagai latihan layout tunggal dengan deskripsi
+          dan portofolio sederhana.
+        </p>
+      </section>
+
+      <main class="page-content">
+        <article class="entry">
+          <h2>Deskripsi</h2>
+          <p>
+            Website ini merupakan project Praktikum 4 CSS Layout. Tujuannya
+            adalah mempraktikkan struktur HTML semantik, pengaturan box, CSS
+            float, serta pembuatan beberapa halaman yang saling terhubung.
+          </p>
+        </article>
+
+        <hr class="divider" />
+        <section id="portofolio">
+          <h2>Portofolio</h2>
+          <p>
+            Saya Indra, motion graphics artist dan video editor. Berikut
+            beberapa karya dari playlist MV Works. Klik thumbnail untuk memutar videonya.
+          </p>
+
+          <div class="video-grid">
+            <article class="widget-box video-card">
+              <h3 class="title">Video 1</h3>
+              <div class="video-frame" data-video="_FBsd8Vj25Q">
+                <button type="button" class="video-play" aria-label="Putar Video 1">
+                  <img
+                    src="https://i.ytimg.com/vi/_FBsd8Vj25Q/hqdefault.jpg"
+                    alt="Thumbnail Video 1"
+                    loading="lazy"
+                  />
+                </button>
+              </div>
+              <p>
+                <a
+                  href="https://www.youtube.com/watch?v=_FBsd8Vj25Q"
+                  target="_blank"
+                  rel="noopener"
+                  >Tonton di YouTube</a
+                >
+              </p>
+            </article>
+
+            <article class="widget-box video-card">
+              <h3 class="title">Video 2</h3>
+              <div class="video-frame" data-video="rS0XVcMZgIA">
+                <button type="button" class="video-play" aria-label="Putar Video 2">
+                  <img
+                    src="https://i.ytimg.com/vi/rS0XVcMZgIA/hqdefault.jpg"
+                    alt="Thumbnail Video 2"
+                    loading="lazy"
+                  />
+                </button>
+              </div>
+              <p>
+                <a
+                  href="https://www.youtube.com/watch?v=rS0XVcMZgIA"
+                  target="_blank"
+                  rel="noopener"
+                  >Tonton di YouTube</a
+                >
+              </p>
+            </article>
+
+            <article class="widget-box video-card">
+              <h3 class="title">Video 3</h3>
+              <div class="video-frame" data-video="wCdHamv0IDM">
+                <button type="button" class="video-play" aria-label="Putar Video 3">
+                  <img
+                    src="https://i.ytimg.com/vi/wCdHamv0IDM/hqdefault.jpg"
+                    alt="Thumbnail Video 3"
+                    loading="lazy"
+                  />
+                </button>
+              </div>
+              <p>
+                <a
+                  href="https://www.youtube.com/watch?v=wCdHamv0IDM"
+                  target="_blank"
+                  rel="noopener"
+                  >Tonton di YouTube</a
+                >
+              </p>
+            </article>
+
+            <article class="widget-box video-card">
+              <h3 class="title">Video lainnya</h3>
+              <div class="video-more">
+                <a
+                  href="https://www.youtube.com/playlist?list=PLMqL_CZ2g-RM"
+                  class="btn btn-large"
+                  target="_blank"
+                  rel="noopener"
+                  >Buka playlist MV Works</a
+                >
+              </div>
+              <p>Lihat seluruh karya di YouTube.</p>
+            </article>
+          </div>
+        </section>
+
+        <script>
+          document.querySelectorAll(".video-play").forEach(function (btn) {
+            btn.addEventListener("click", function () {
+              var frame = btn.parentElement;
+              var iframe = document.createElement("iframe");
+              iframe.src =
+                "https://www.youtube.com/embed/" +
+                frame.dataset.video +
+                "?autoplay=1&rel=0";
+              iframe.title = btn.getAttribute("aria-label");
+              iframe.allow = "autoplay; encrypted-media; picture-in-picture; fullscreen";
+              iframe.referrerPolicy = "strict-origin-when-cross-origin";
+              iframe.allowFullscreen = true;
+              frame.replaceChildren(iframe);
+            });
+          });
+        </script>
+
+        <section class="widget-box profile-note">
+          <h3 class="title">Profil Mahasiswa</h3>
+          <p><strong>Nama:</strong> Indra Dwiyantoro</p>
+          <p><strong>Program Studi:</strong> Teknik Informatika</p>
+          <p><strong>Bidang:</strong> Motion graphics dan video editing</p>
+        </section>
+      </main>
+      <footer>
+        <p>&copy; 2026 - Universitas Pelita Bangsa</p>
+      </footer>
+    </div>
+  </body>
+</html>

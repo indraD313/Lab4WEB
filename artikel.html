@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Artikel - Layout Sederhana</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div id="topbar">
+        <header>
+          <h1>Artikel</h1>
+          <p>Catatan singkat tentang HTML dan CSS</p>
+        </header>
+        <nav aria-label="Navigasi utama">
+        <a href="home.html">Home</a>
+        <a class="active" href="artikel.html">Artikel</a>
+        <a href="about.html">About</a>
+        <a href="kontak.html">Kontak</a>
+        </nav>
+      </div>
+
+      <section id="hero" class="hero-small">
+        <h2>Artikel Pembelajaran</h2>
+        <p>Dasar-dasar yang digunakan dalam pembuatan layout website.</p>
+      </section>
+
+      <main class="page-content">
+        <article class="entry">
+          <h2>Memahami Box Element</h2>
+          <img
+            src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&amp;fit=crop&amp;w=600&amp;h=400&amp;q=85"
+            alt="Laptop di meja"
+          />
+          <p>
+            Setiap elemen HTML dapat dipahami sebagai sebuah kotak. Box model
+            terdiri dari content, padding, border, dan margin. Keempat bagian
+            ini membantu mengatur ukuran serta jarak elemen.
+          </p>
+        </article>
+
+        <hr class="divider" />
+        <article class="entry">
+          <h2>Menggunakan CSS Float</h2>
+          <img
+            src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&amp;fit=crop&amp;w=600&amp;h=400&amp;q=85"
+            alt="Seseorang bekerja menggunakan laptop"
+            class="right-img"
+          />
+          <p>
+            Properti float dapat menempatkan elemen ke sisi kiri atau kanan
+            sehingga elemen lain dapat mengalir di sekelilingnya. Properti
+            clear digunakan untuk mengatur elemen agar tidak berada di samping
+            elemen yang di-float.
+          </p>
+        </article>
+      </main>
+      <footer>
+        <p>&copy; 2026 - Universitas Pelita Bangsa</p>
+      </footer>
+    </div>
+  </body>
+</html>
