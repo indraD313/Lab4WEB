@@ -2,8 +2,8 @@
 # Lab4Web - CSS Layout
 ## Preview
 
-![a](./img/a.png)
-![b](./img/b.png)
+![a](img/a.png)
+![b](img/b.png)
 ## Deskripsi
 Project ini merupakan hasil Praktikum 4 Pemrograman Web tentang CSS Layout. Project ini bertujuan untuk memahami struktur layout website, Box Element, CSS Float, dan HTML Semantic Elements.
 
