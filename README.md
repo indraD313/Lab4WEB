@@ -3,10 +3,11 @@
 
 ## Informasi Praktikum
 
-- **Mata Kuliah:** Lab4Web
+- **Mata Kuliah:** Pemrograman Web
 - **Praktikum:** Praktikum 4 — CSS Layout
-- **Nama:** Isi nama kamu
-- **Kelas:** Isi kelas kamu
+- **Nama:** Indra Dwiyantoro
+- **NIM:** 312510495
+- **Kelas:** I253B
 
 ## 1. Tujuan Praktikum
 
