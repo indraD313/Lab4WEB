@@ -511,7 +511,6 @@ code {
   color: #8a8a8a;
 }
 
-/* layar kecil */
 @media (max-width: 1000px) {
   #main,
   #sidebar {

@@ -1,42 +1,90 @@
-# Lab4Web - Praktikum 4 CSS Layout
 
-## Deskripsi
-Project ini dibuat untuk Praktikum 4 Pemrograman Web dengan materi Box Element, CSS Float, Clearfix, HTML5 Semantic Elements, dan pembuatan layout website sederhana.
+# Praktikum 4 — CSS Layout
 
-Tampilan menggunakan style gelap buatan sendiri: banner pixel art di bagian atas, navigasi dengan efek kaca dan glow biru, serta layout dua kolom (konten utama dan sidebar) dengan CSS float.
+## Informasi Praktikum
 
-## Daftar Halaman
-- `home.html` - Halaman utama dengan navigasi, hero, konten, sidebar, dan footer.
-- `artikel.html` - Contoh konten artikel dengan gambar dan penggunaan float.
-- `about.html` - Halaman About berisi deskripsi, portofolio video (playlist YouTube MV Works), dan profil.
-- `kontak.html` - Halaman Contact dengan formulir nama, email, subjek, dan pesan.
-- `lab4_box.html` - Demonstrasi Box Element, float, dan clear.
-- `style.css` - Gaya visual yang digunakan bersama oleh semua halaman.
-- `img/banner.png` - Gambar banner pada bagian atas halaman.
-- `screenshots/` - Simpan screenshot hasil setiap tahap praktikum di folder ini.
+- **Mata Kuliah:** Lab4Web
+- **Praktikum:** Praktikum 4 — CSS Layout
+- **Nama:** Isi nama kamu
+- **Kelas:** Isi kelas kamu
 
-## Cara Menjalankan
-1. Download atau clone repository.
-2. Buka folder `Lab4Web`.
-3. Jalankan `home.html` menggunakan browser.
-4. Gunakan menu navigasi untuk membuka halaman Artikel, About, dan Kontak.
+## 1. Tujuan Praktikum
 
-Catatan: pemutar YouTube di halaman About kadang menolak tampil jika halaman dibuka langsung dari file (`file://`). Jika itu terjadi, jalankan lewat server lokal (misalnya ekstensi Live Server di VS Code) atau publikasikan lewat GitHub Pages.
+Praktikum ini bertujuan untuk mempelajari penggunaan CSS dalam mengatur tata letak halaman web, mengatur posisi elemen, serta membuat tampilan website yang rapi dan konsisten.
 
-## Ringkasan Praktikum
-1. Membuat struktur HTML dan memahami Box Element.
-2. Menggunakan `float` untuk menempatkan elemen secara berdampingan.
-3. Menggunakan `clear` untuk mengatur posisi elemen setelah elemen float.
-4. Menyusun layout dengan elemen semantik seperti `header`, `nav`, `main`, `section`, `article`, `aside`, dan `footer`.
-5. Membuat halaman About yang berisi deskripsi dan portofolio.
-6. Membuat halaman Kontak dengan formulir nama, email, subjek, dan pesan.
+## 2. Langkah-Langkah Praktikum
 
-## Catatan
-Formulir kontak pada project ini merupakan contoh tampilan dan validasi di browser. Form belum terhubung ke backend atau layanan email.
+### Langkah 1 — Menyiapkan Struktur File
 
-Tambahkan screenshot hasil praktikum ke folder `screenshots/` dan cantumkan di README sebelum dikumpulkan.
+Menyiapkan file HTML untuk halaman website dan file CSS eksternal untuk mengatur tampilan halaman.
 
-## Identitas
-Nama: Indra  
-Kelas: [Kelas Kamu]  
-Mata Kuliah: Pemrograman Web
+![Struktur file proyek](screenshots/01-struktur-file.png)
+
+### Langkah 2 — Membuat Halaman Home
+
+Membuat halaman utama website dengan HTML dan menerapkan CSS untuk mengatur warna, tipografi, jarak, serta tata letak elemen.
+
+![Halaman Home](screenshots/02-home.png)
+
+### Langkah 3 — Membuat Navigasi
+
+Membuat menu navigasi untuk menghubungkan halaman Home, About, Artikel, dan Kontak. Setiap tautan diuji untuk memastikan halaman tujuan dapat dibuka.
+
+![Navigasi website](screenshots/03-navigasi.png)
+
+### Langkah 4 — Mengatur Layout
+
+Menggunakan CSS untuk mengatur susunan konten, ukuran elemen, jarak, serta posisi bagian utama halaman dan sidebar jika digunakan.
+
+![Layout halaman](screenshots/04-layout.png)
+
+### Langkah 5 — Membuat Halaman About / Portfolio
+
+Membuat halaman untuk menampilkan informasi atau karya. Halaman portfolio dapat berisi beberapa video YouTube yang ditampilkan melalui embed.
+
+![Halaman Portfolio](screenshots/05-portfolio.png)
+
+### Langkah 6 — Membuat Halaman Artikel
+
+Menyusun halaman artikel dengan judul dan isi konten yang terstruktur serta menerapkan gaya CSS yang konsisten.
+
+![Halaman Artikel](screenshots/06-artikel.png)
+
+### Langkah 7 — Membuat Halaman Kontak
+
+Membuat halaman kontak untuk menampilkan informasi kontak atau elemen lain sesuai kebutuhan proyek.
+
+![Halaman Kontak](screenshots/07-kontak.png)
+
+### Langkah 8 — Pengujian Tampilan
+
+Memeriksa hasil akhir setiap halaman dan memastikan navigasi serta tata letak berfungsi dengan baik. Jika website dibuat responsif, periksa juga tampilan pada ukuran layar yang lebih kecil.
+
+![Pengujian tampilan](screenshots/08-responsive.png)
+
+## 3. Kesimpulan
+
+Melalui praktikum ini, penggunaan CSS membantu mengatur tampilan dan tata letak halaman web agar lebih terstruktur dan konsisten. Pengujian dilakukan untuk memastikan halaman dapat ditampilkan dengan baik dan navigasi berfungsi sesuai tujuan.
+
+## 4. Struktur Folder
+
+```text
+Lab4Web/
+├── home.html
+├── about.html
+├── artikel.html
+├── kontak.html
+├── style.css
+├── README.md
+├── img
+|   └── banner.png
+└── screenshots/
+    ├── 01-struktur-file.png
+    ├── 02-home.png
+    ├── 03-navigasi.png
+    ├── 04-layout.png
+    ├── 05-portfolio.png
+    ├── 06-artikel.png
+    ├── 07-kontak.png
+    └── 08-responsive.png
+```
